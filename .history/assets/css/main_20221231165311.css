@@ -44,7 +44,7 @@
     }
     
     a {
-      /* border-bottom: 3px solid var(--maincolor); */
+      border-bottom: 3px solid var(--maincolor);
       color: dodgerblue;
       text-decoration: none;
     }

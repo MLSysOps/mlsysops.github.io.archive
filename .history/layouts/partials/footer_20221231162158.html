@@ -1,0 +1,30 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Yang Xiao(YXIAO009@e.ntu.edu.sg)
+ * @Date: 2022-12-31 16:20:39
+ * @LastEditors: Yang Xiao
+ * @LastEditTime: 2022-12-31 16:21:58
+-->
+<footer>
+    <div style="display:flex">
+      {{- range $index, $key := .Site.Params.Social -}}
+      <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+      <a class="border"></a>
+      {{- end -}}
+    </div>
+    <div class="footer-info">
+      {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} 
+      <a> <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/brands/github.svg" width="20" /> This website is based on [Awesome-System-for-Machine-Learning](https://github.com/HuaizhengZhang/Awesome-System-for-Machine-Learning). </a>
+      <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+    </div>
+  </footer>
+  {{ if not .Site.IsServer }}
+  {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  
+  {{- if (isset .Site.Params "social") -}}
+  <script>
+    feather.replace()
+  </script>
+  {{- end -}}

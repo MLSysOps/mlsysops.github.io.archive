@@ -12,21 +12,11 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Research Groups"
-url = "/research"
+name = "All posts"
+url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Events"
-url = "/events"
+name = "About"
+url = "/about"
 weight = 3
-
-[[menu.main]]
-name = "Talks"
-url = "/talks"
-weight = 4
-
-[[menu.main]]
-name = "Tools"
-url = "/tools"
-weight = 5

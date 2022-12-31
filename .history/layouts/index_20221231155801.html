@@ -1,0 +1,22 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Yang Xiao(YXIAO009@e.ntu.edu.sg)
+ * @Date: 2022-12-31 15:56:25
+ * @LastEditors: Yang Xiao
+ * @LastEditTime: 2022-12-31 15:58:01
+-->
+
+<!DOCTYPE html>
+<html>
+	{{ partial "header.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "head.html" . }}
+			
+			{{.Content}}
+			{{ partial "footer.html" . }}
+		</div>
+		
+	</body>
+</html>
